@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function Main() {
-  return <App />;
+import App from './App.js';
+// import * as serviceWorker from "./serviceWorker";
+
+class Main extends React.Component {
+  render () {
+    return <App />;
+  }
 }
 
-const rootElement = document.getElementById('rootElement');
-ReactDOM.render( <Main />, rootElement);
+const rootElement = document.getElementById('root');
+ReactDOM.render(<Main />, rootElement);
+
+// serviceWorker.unregister();

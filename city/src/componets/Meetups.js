@@ -1,14 +1,13 @@
 import React from 'react';
-
-const Weather = props => {
+const Meetups = props => {
   return (
     <section>
       <h3> Results</h3>
-      <ul className='weather-results'>
+      <ul className='meetups-results'>
         {props.data && props.data.map((item, key) => {
           return (
-            <li>
-            The forcast for {item.time} is {item.forecast}
+            <li key={key}>
+              <a href='{item.link'>{item.name}</a>
             </li>
           );
         })};
@@ -16,5 +15,4 @@ const Weather = props => {
     </section>
   );
 };
-
-export default Weather;
+export default Meetups;

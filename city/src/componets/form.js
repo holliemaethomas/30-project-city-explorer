@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Form (props) {
   return (
-    <Form onSubmit={props.handleSubmit}>
+    <form onSubmit={props.handleSubmit}>
       <label htmlfor='city'>Search</label>
       <input
         type='text'
@@ -12,6 +12,6 @@ export default function Form (props) {
       />
       <button type='submit'>EXPLORE!</button>
 
-    </Form>
+    </form>
   );
 }
